@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería de Productos Interactiva</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>🛍️ Galería de Productos Interactiva</h1>
+  </header>
+
+  <main>
+    <!-- Sección de Filtros -->
+    <section class="filtros">
+      <!-- Filtro por Categorías -->
+      <div class="grupo-filtro">
+        <h3>Filtrar por Categoría:</h3>
+        <div id="contenedor-botones">
+          <button class="btn-categoria" data-categoria="Todas">Todas</button>
+          <button class="btn-categoria" data-categoria="Tecnología">Tecnología</button>
+          <button class="btn-categoria" data-categoria="Ropa">Ropa</button>
+          <button class="btn-categoria" data-categoria="Hogar">Hogar</button>
+        </div>
+      </div>
+
+      <!-- Filtro por Precio Máximo -->
+      <div class="grupo-filtro">
+        <h3>Filtrar por Precio Máximo:</h3>
+        <div class="precio-input-container">
+          <input type="number" id="input-precio" placeholder="Ej. 100" min="0" />
+          <button id="btn-filtrar-precio">Filtrar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contenedor dinámico de productos -->
+    <section id="contenedor-productos" class="galeria">
+      <!-- JavaScript renderizará los productos aquí con map() -->
+    </section>
+  </main>
+
+  <script type="module" src="./src/main.js"></script>
+</body>

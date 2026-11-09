@@ -1,0 +1,131 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #213547;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #1a1a1a;
+}
+
+.filtros {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.grupo-filtro h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+#contenedor-botones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-categoria {
+  background-color: #edf2f7;
+  border: 1px solid #cbd5e0;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-categoria:hover {
+  background-color: #cbd5e0;
+}
+
+.precio-input-container {
+  display: flex;
+  gap: 10px;
+}
+
+#input-precio {
+  padding: 8px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  width: 120px;
+}
+
+#btn-filtrar-precio {
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#btn-filtrar-precio:hover {
+  background-color: #2b6cb0;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta-producto {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.tarjeta-producto:hover {
+  transform: translateY(-3px);
+}
+
+.tarjeta-producto h3 {
+  margin-top: 0;
+  color: #2d3748;
+}
+
+.tarjeta-producto .categoria {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.tarjeta-producto .precio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #38a169;
+}
+
+.sin-resultados {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #718096;
+  font-size: 1.1rem;
+  padding: 40px;
+}
